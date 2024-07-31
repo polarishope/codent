@@ -1,0 +1,62 @@
+/*@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.codent-button,
+.codent-toggle-button,
+.codent-close-button {
+  min-width: 30px;
+  min-height: 30px;
+  background-color: #007bff; /* 按钮背景颜色：蓝色 */
+  color: white; /* 按钮字体颜色：白色 */
+  padding: 2px 2px; /* 内边距 */
+  border: none; /* 无边框 */
+  border-radius: 6px; /* 圆角半径 */
+  font-size: 14px; /* 字体大小 */
+  cursor: pointer; /* 鼠标指针 */
+  transition: box-shadow 0.3s ease; /* 动效过渡 */
+  flex-grow: 0;
+}
+
+.codent-button {
+  position: absolute;
+  z-index: 1000;
+}
+
+.codent-close-button {
+  margin-left: auto;
+}
+
+.codent-card {
+  width: 500px;
+  border: 2px solid #007bff; /* 蓝色边框 */
+  border-radius: 6px; /* 圆角半径 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  padding: 2px; /* 内边距 */
+  background-color: white; /* 背景颜色 */
+  transition: box-shadow 0.3s ease; /* 动效过渡 */
+  position: absolute;
+  z-index: 1500;
+}
+
+.codent-card-title {
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  flex: row;
+  align-items: center;
+}
+
+.codent-card-title-text {
+  flex-grow: 1;
+}
+
+.no-select,
+.no-select * {
+  user-select: none; /* 禁止用户选择文本 */
+  -webkit-user-select: none; /* 针对Safari */
+  -moz-user-select: none; /* 针对Firefox */
+  -ms-user-select: none; /* 针对IE */
+}
